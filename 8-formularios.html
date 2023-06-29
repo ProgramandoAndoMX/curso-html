@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="estilos/formularios.css">
+    <style>
+        label {
+            display: inline-block;
+        }
+        input, textarea {
+            margin: 10px 0;
+            width:100%; 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="https://www.w3schools.com/action_page.php" method="post">
+            <label>Nombre de usuario</label>
+            <input type="text" name="nombre_usuario">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" name="correo" id="correo">
+
+            <label for="clave">Contraseña</label>
+            <input type="password" name="clave" id="clave">
+            
+            <label for="colorfav">Tu color favorito:</label>
+            <input type="color" id="colorfav" name="colorfav">
+            
+            <label for="fnacimiento">Fecha de nacimiento</label>
+            <input type="date" id="fnacimiento" name="fnacimiento">
+
+            <label for="comentarios">Comentarios adicionales</label>
+            <textarea id="comentarios" name="comentarios"></textarea>
+
+            <label for="avatar">Subir un avatar en imagen:</label>
+            <input type="file" id="avatar" name="mi_archivo">
+
+            
+            <label for="acepto">Acepto los términos y condiciones</label>
+            <input id="acepto" type="checkbox" name="estoy-de-acuerdo" value="si">
+
+            <label for="equipo">Soy equipo</label>
+            <select name="equipo" id="equipo">
+                <option value="calor">Calor</option>
+                <option value="frio">Frío</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <input type="submit" value="Enviar!" id="enviar">
+        </form>
+    </main>
+</body>
+</html>
